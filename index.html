@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tetricks</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<h1>Tetricks</h1>
+
+<div class="game">
+  <canvas id="tetris" width="200" height="400"></canvas>
+
+  <div class="side">
+    <div class="score">Score: <span id="score">0</span></div>
+
+    <div class="next-box">
+      <p>Next</p>
+      <canvas id="next" width="80" height="80"></canvas>
+      <div id="nextColor"></div>
+    </div>
+  </div>
+</div>
+
+<div class="controls">
+  <button id="left">⬅</button>
+  <button id="rotate">↺</button>
+  <button id="right">➡</button>
+  <button id="down">⬇</button>
+</div>
+  
+  <div id="menu">
+    <h1>Tetricks</h1>
+    <button id="startBtn">Start Game</button>
+    <p>Use arrow keys to move, Up to rotate.</p>
+</div>
+
+  <div id="currentMaterial">
+    Material: <span id="materialName">metal</span>
+</div>
+
+<script src="tetris.js"></script>
+</body>
+</html>
